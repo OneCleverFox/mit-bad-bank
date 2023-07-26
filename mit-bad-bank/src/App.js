@@ -6,7 +6,7 @@ import Layout from "./components/layout";
 import Home from "./components/home";
 import Deposit from "./components/deposit";
 import Withdraw from "./components/withdraw";
-import UserAccount from "./components/withdraw";
+import UserAccount from "./components/useraccount";
 import AllData from "./components/alldata";
 
 

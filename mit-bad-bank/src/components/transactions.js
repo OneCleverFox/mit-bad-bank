@@ -1,5 +1,4 @@
 // Importing the necessary dependencies
-import useUserContext from "../hooks/useUserContext"; // Custom hook to access user context
 import Table from "@mui/material/Table"; // Material-UI Table component
 import TableBody from "@mui/material/TableBody"; // Material-UI TableBody component
 import TableCell from "@mui/material/TableCell"; // Material-UI TableCell component
@@ -7,6 +6,9 @@ import TableContainer from "@mui/material/TableContainer"; // Material-UI TableC
 import TableHead from "@mui/material/TableHead"; // Material-UI TableHead component
 import TableRow from "@mui/material/TableRow"; // Material-UI TableRow component
 import Paper from "@mui/material/Paper"; // Material-UI Paper component
+
+
+import useUserContext from "../data/useContext"; // Custom hook to access user context
 
 // Functional component to display user transactions
 const Transactions = () => {

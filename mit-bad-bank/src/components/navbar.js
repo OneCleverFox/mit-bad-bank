@@ -119,6 +119,7 @@ const Navbar = () => {
       </nav>
       {/* Show the RegisterPopUp component if isRegisterPopUp is true */}
       {isRegisterPopUp && <RegisterPopUp handleClose={toggleRegisterPopUp} />}
+      
       {/* Show the LoginPopUp component if isLoginPopUp is true */}
       {isLoginPopUp && <LoginPopUp handleClose={toggleLoginPopUp} />}
     </>

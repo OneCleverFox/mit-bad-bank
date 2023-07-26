@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 import User from "../data/user";
