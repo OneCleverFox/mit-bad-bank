@@ -53,7 +53,7 @@ const Transactions = () => {
               <>
                 <TableBody>
                   <TableRow>
-                    <TableCell>No Transactions to show</TableCell>
+                    <TableCell>No Transactions</TableCell>
                   </TableRow>
                 </TableBody>
               </>
