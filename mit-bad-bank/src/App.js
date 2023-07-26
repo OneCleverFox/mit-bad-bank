@@ -1,7 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 // Import necessary components (Home, Deposit, Withdraw, UserAccount, AllData) here
 import Layout from "./components/layout";
+import Home from "./components/home";
+import Deposit from "./components/deposit";
+import Withdraw from "./components/withdraw";
+import UserAccount from "./components/withdraw";
+import AllData from "./components/alldata";
+
+
 
 
 function App() {
@@ -16,7 +24,7 @@ function App() {
             {/* Set up child routes */}
             {/* The "index" route for the root path */}
             <Route index element={<Home />} />
-            
+
             {/* Additional routes */}
             <Route path="home" element={<Home />} />
             <Route path="deposit" element={<Deposit />} />

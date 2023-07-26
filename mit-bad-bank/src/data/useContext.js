@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // Import the 'UserContext' from the specified location.
-import UserContext from "../data/userontext";
+import UserContext from "../data/useContext";
 
 // Define a custom hook called 'useUserContext'.
 const useUserContext = () => {

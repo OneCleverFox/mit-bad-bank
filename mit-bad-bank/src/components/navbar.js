@@ -1,8 +1,8 @@
 // Import necessary dependencies and components
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import useUserContext from "../data/usercontext";
 
+import useUserContext from "../data/useContext";
 import RegisterPopUp from "../popupwindows/registration";
 import LoginPopUp from "../popupwindows/login";
 
