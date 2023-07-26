@@ -1,13 +1,13 @@
 // Importing necessary modules and components
 import { useState } from "react"; // Importing the 'useState' hook from React
-import useUserContext from "../data/useContext"; // Importing the custom 'useUserContext' hook from '../hooks/useUserContext'
 import { Button } from "@mui/material"; // Importing the 'Button' component from the '@mui/material' library
+
+
 import Avatar from "./avatar"; // Importing the 'Avatar' component from './Avatar'
 import Transactions from "./transactions"; // Importing the 'Transactions' component from './transactions'
-
+import useUserContext from "../data/useContext"; // Importing the custom 'useUserContext' hook from '../hooks/useUserContext'
 import getTotal from "../data/total"; // Importing the 'getTotal' function from '../helpers/getTotal'
-
-import UpdateProfilePopUp from "./popupwindows/updateprofile"; // Importing the 'UpdateProfilePopUp' component from './popups/UpdateProfilePopUp'
+import UpdateProfilePopUp from "../popupwindows/updateprofile"; // Importing the 'UpdateProfilePopUp' component from './popups/UpdateProfilePopUp'
 import Chart from "./Chart"; // Importing the 'Chart' component from './Chart'
 
 // Defining the 'UserAccount' component

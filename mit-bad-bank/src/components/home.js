@@ -12,11 +12,17 @@ const Home = () => {
   // State variable to control the display of the AboutPopUp
   const [isAboutPopUp, setIsAboutPopUp] = useState(false);
 
+   // State variable to control the display of the RegisterPopUp (fix the variable name here)
+   const [isRegisterPopUp, setIsRegiterPopUp] = useState(false);
+
   // Function to toggle the display of the AboutPopUp
   const toggleAboutPopUp = () => {
     setIsAboutPopUp(!isAboutPopUp);
   };
 
+  const toggleRegisterPopUp = () => {
+    setIsRegiterPopUp(!isRegisterPopUp);
+  };
   // Custom styles for the card
   const customStyles = {
     width: "25rem",
@@ -45,14 +51,15 @@ const Home = () => {
 
       {/* Button container */}
       <div className="card-container">
-        <button onClick={RegisterPopUp} className="btn btn-danger">
+        <button onClick={toggleRegisterPopUp} className="btn btn-danger">
           Create Account
         </button>
         <button onClick={toggleAboutPopUp} className="btn btn-primary">
           How to use this App
         </button>
       </div>
-
+      {/* Show the RegisterPopUp component if isRegisterPopUp is true */}
+      {isRegisterPopUp && <RegisterPopUp handleClose={toggleRegisterPopUp} />}
       {/* Conditional rendering of AboutPopUp */}
       {isAboutPopUp && <AboutPopUp handleClose={toggleAboutPopUp} />}
     </>
@@ -61,3 +68,4 @@ const Home = () => {
 
 // Exporting the Home component as the default export
 export default Home;
+

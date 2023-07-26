@@ -1,6 +1,5 @@
 // Import necessary dependencies
 import { useFormik } from "formik";
-import useUserContext from "../data/useContext";
 import { toast } from "react-toastify";
 import * as yup from "yup";
 import { ref } from "yup";
@@ -9,7 +8,9 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Avatar from "./components/Avatar";
+
+import useUserContext from "../data/useContext";
+import Avatar from "../components/avatar";
 
 // Component for updating user profile
 const UpdateProfilePopUp = ({ handleClose }) => {
@@ -99,12 +100,9 @@ const UpdateProfilePopUp = ({ handleClose }) => {
                       label="Avatar"
                     >
                       <MenuItem value="/images/Avatar0.png">Default</MenuItem>
-                      <MenuItem value="/images/Avatar1.png">Female 1</MenuItem>
-                      <MenuItem value="/images/Avatar5.png">Female 2</MenuItem>
-                      <MenuItem value="/images/Avatar6.png">Female 3</MenuItem>
-                      <MenuItem value="/images/Avatar2.png">Male 1</MenuItem>
-                      <MenuItem value="/images/Avatar4.png">Male 2</MenuItem>
-                      <MenuItem value="/images/Avatar3.png">Male 3</MenuItem>
+                      <MenuItem value="/images/fox-male.png">Male</MenuItem>
+                      <MenuItem value="/images/fox-female.png">Female</MenuItem>
+                      <MenuItem value="/images/fox-rainbow.png">other</MenuItem>                      
                     </Select>
                   </FormControl>
                 </Box>

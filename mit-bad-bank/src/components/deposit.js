@@ -1,12 +1,12 @@
 // Import React hooks and libraries
 import { useState, useEffect } from "react";
-import useUserContext from "../data/useContext";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { Button, TextField, Box } from "@mui/material";
 import { toast } from "react-toastify";
 
-// Import helper function
+// Import function
+import useUserContext from "../data/useContext";
 import createTransaction from "../data/transaction";
 
 // Define the Deposit component

@@ -1,9 +1,13 @@
 // Import necessary libraries and components
 import { useState, useEffect } from "react";
 import { useFormik } from "formik";
-import useUserContext from "../data/usercontext";
 import { toast } from "react-toastify";
+
+
 import User from "../data/user";
+import useUserContext from "../data/useContext";
+import Avatar from "../components/avatar";
+
 
 // Import validation library and components from MUI
 import * as yup from "yup";
@@ -13,7 +17,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Avatar from "../components/avatar";
+
 
 // Define the RegisterPopUp component
 const RegisterPopUp = ({ handleClose }) => {
@@ -170,9 +174,9 @@ const RegisterPopUp = ({ handleClose }) => {
                       >
                         {/* Avatar options */}
                         <MenuItem value="/images/Avatar0.png">Default</MenuItem>
-                        <MenuItem value="/images/Avatar1.png">Female</MenuItem>                        
-                        <MenuItem value="/images/Avatar2.png">Male</MenuItem>
-                        <MenuItem value="/images/Avatar2.png">other</MenuItem>
+                        <MenuItem value="/images/fox-male.png">Male</MenuItem>                        
+                        <MenuItem value="/images/fox-female.png">Female</MenuItem>
+                        <MenuItem value="/images/fox-rainbow.png">other</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
