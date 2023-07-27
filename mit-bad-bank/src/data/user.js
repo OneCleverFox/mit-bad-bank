@@ -1,4 +1,3 @@
-// Commented version of the code
 // Represents a User class with user information and transaction history
 class User {
     // Constructor to initialize the User object

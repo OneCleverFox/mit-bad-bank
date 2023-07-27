@@ -15,7 +15,7 @@ const Transactions = () => {
   // Access the user context to get the logged-in user's data
   const { loggedInUser } = useUserContext();
 
-  // Mapping the transaction history of the logged-in user to JSX elements
+  // Mapping the transaction history of the logged-in user
   const transactionList = loggedInUser?.transactionHistory?.map(
     (transaction, i) => {
       return (

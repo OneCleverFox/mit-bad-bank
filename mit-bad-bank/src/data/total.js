@@ -16,6 +16,6 @@ const getTotal = (targetType, data) => {
     return targetArray.reduce((acc, obj) => acc + obj.amount, 0);
   };
   
-  // Export the getTotal function as the default export.
+  // Export the getTotal function 
   export default getTotal;
   

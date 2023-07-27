@@ -1,4 +1,4 @@
-// This import statement brings in the getCurrentDate function from the file "./getCurrentDate.js".
+// This import statement brings in the getCurrentDate function
 import getCurrentDate from "./currentdate";
 
 // This function creates a transaction object with the specified type, amount, and current date.
@@ -10,5 +10,5 @@ const createTransaction = (type, amount) => {
   };
 };
 
-// This line exports the createTransaction function as the default export for this module.
+// This line exports the createTransaction function
 export default createTransaction;

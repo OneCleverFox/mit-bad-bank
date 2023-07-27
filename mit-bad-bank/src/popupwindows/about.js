@@ -36,8 +36,8 @@ const AboutPopUp = ({ handleClose }) => {
 
                     {/* Link to the GitHub repository */}
                     <h6>
-                      <a href="https://github.com">
-                        GitHub Repo
+                      <a href="https://github.com/OneCleverFox">
+                        OneCleverFox@GitHub
                       </a>
                     </h6>
                   </div>
@@ -63,5 +63,5 @@ const AboutPopUp = ({ handleClose }) => {
   );
 };
 
-// Export the AboutPopUp component to be used in other parts of the application
+// Export the AboutPopUp component
 export default AboutPopUp;

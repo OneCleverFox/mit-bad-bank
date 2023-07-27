@@ -6,7 +6,7 @@ import { Button } from "@mui/material"; // Importing the 'Button' component from
 import Avatar from "./avatar"; // Importing the 'Avatar' component from './Avatar'
 import Transactions from "./transactions"; // Importing the 'Transactions' component 
 import useUserContext from "../data/useContext"; // Importing the custom 'useUserContext' 
-import getTotal from "../data/total"; // Importing the 'getTotal' function from '../data/getTotal'
+import getTotal from "../data/total"; // Importing the 'getTotal' function '
 import UpdateProfilePopUp from "../popupwindows/updateprofile"; // Importing the 'UpdateProfilePopUp' component 
 import Chart from "./chart"; // Importing the 'Chart' component from './chart'
 

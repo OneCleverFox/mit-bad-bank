@@ -1,6 +1,6 @@
 // This is a functional component named Avatar that takes a prop called 'image'
 const Avatar = ({ image }) => {
-    // The component returns JSX code that displays an image within a div
+    // The component returns JS code that displays an image within a div
     return (
       <>
         {/* The outer div with the className 'avatar-container' */}

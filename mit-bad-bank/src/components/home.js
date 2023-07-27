@@ -1,5 +1,3 @@
-// This is a React functional component for the Home page.
-
 // Importing useState hook from React library
 import { useState } from "react";
 
@@ -12,7 +10,7 @@ const Home = () => {
   // State variable to control the display of the AboutPopUp
   const [isAboutPopUp, setIsAboutPopUp] = useState(false);
 
-   // State variable to control the display of the RegisterPopUp (fix the variable name here)
+   // State variable to control the display of the RegisterPopUp
    const [isRegisterPopUp, setIsRegiterPopUp] = useState(false);
 
   // Function to toggle the display of the AboutPopUp

@@ -1,7 +1,7 @@
 // Import necessary modules from "react" library
 import { createContext, useState } from "react";
 
-// Import sample user data from "../data/user" (Assuming it's an array of user objects)
+// Import sample user data from "../data/user
 import users from "./users";
 
 // Create a new Context object named "UserContext" with an initial empty object as the default value
@@ -25,5 +25,5 @@ export const UserProvider = ({ children }) => {
   );
 };
 
-// Export the "UserContext" object to be used in other parts of the application
+// Export the "UserContext" object
 export default UserContext;

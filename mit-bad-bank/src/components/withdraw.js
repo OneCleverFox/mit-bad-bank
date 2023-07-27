@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { toast } from "react-toastify";
 
-// Importing the helper function 'createTransaction' from the specified path
+// Importing the helping functions
 import createTransaction from "../data/transaction";
 import useUserContext from "../data/useContext";
 

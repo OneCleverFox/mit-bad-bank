@@ -5,7 +5,7 @@ const users = [
       name: "CleverFox", // Placeholder for user's name
       email: "OneCleverFox@Fox.com", // Placeholder for user's email
       password: "Foxy1234", // Placeholder for user's password
-      balance: "1000", // Placeholder for user's account balance
+      balance: "100", // Placeholder for user's account balance
       transactionHistory: [], // An empty array to store user's transaction history
     },
   ];

@@ -1,4 +1,4 @@
-// Import the 'useUserContext' hook from the '../hooks/useUserContext' file
+// Import the 'useUserContext' 
 import useUserContext from "../data/useContext";
 
 // Import required components from '@mui/material' library
@@ -32,7 +32,7 @@ const AllData = () => {
     );
   });
 
-  // Return the JSX content of the component
+  // Return the content of the component
   return (
     <>
       {/* Heading */}

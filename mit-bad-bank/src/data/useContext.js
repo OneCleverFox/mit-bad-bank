@@ -1,4 +1,4 @@
-// Import the 'useContext' hook from React, which allows us to access context values.
+// Import the 'useContext' hook from React
 import { useContext } from "react";
 
 // Import the 'UserContext' from the specified location.
@@ -10,5 +10,5 @@ const useUserContext = () => {
   return useContext(UserContext);
 };
 
-// Export the 'useUserContext' hook to make it available for other components.
+// Export the 'useUserContext' hook
 export default useUserContext;
