@@ -1,8 +1,10 @@
 // Import required components from the Material-UI library
 import { Button, Box } from "@mui/material";
 
+
 // Define a functional component called AboutPopUp that takes a prop called handleClose
 const AboutPopUp = ({ handleClose }) => {
+
   return (
     <>
       {/* Container for the popup box */}
@@ -11,27 +13,73 @@ const AboutPopUp = ({ handleClose }) => {
           <div className="card">
             <div className="card-body">
               {/* Heading for the popup */}
-              <span className="">About this Application</span>
+              <span className=""></span>
               <hr />
               <div>
                 {/* Container for the content */}
                 <Box m={2} className="custom-btn-group">
                   <div>
                     {/* Main content of the popup */}
-                    <h2>How it works</h2>
+                    <h2>About</h2>
                     <p>
                       {/* Explanation of the application */}
                       This application is all about creating a functional frontend for the prestigious M.I.T. (Massachusetts Institute of Technology) and presenting it. <br />
                       Specifically, certain functions have been provided, which are to be solved in this project for part 2 out of 3.
                       Below is a brief guide on how to use this app. Have fun! 
                       <br /> <br />
-                      In this application, the main focus is on developing and presenting a functional frontend for the renowned Massachusetts Institute of Technology (M.I.T.).<br /> 
-                      You will be provided with specific functions that need to be implemented as part of phase 2 out of the total 3 phases of this project. <br /> 
-                      The application aims to provide an intuitive and user-friendly interface, ensuring a pleasant and efficient experience for the users. <br /> 
+                      In this application, the main focus is on developing and presenting a functional frontend for the renowned Massachusetts Institute of Technology (M.I.T.). 
+                      You will be provided with specific functions that need to be implemented as part of phase 2 out of the total 3 phases of this project.
+                      The application aims to provide an intuitive and user-friendly interface, ensuring a pleasant and efficient experience for the users.
                       The frontend is intended to support M.I.T. in its diverse activities and tasks.
                       To use the app, please follow this brief guide:
-                      <br /> <br />                      
+                      <br /> <br />                    
+                    </p>
+                    
+                    <p>
+                      {/* Step 1: Create Account */}
+                      <h5>Step 1: Create Account</h5>
+                      To get started, click on the "Register" button and fill
+                      in your name, email, password, and confirm the password.
+                      Then, click on "Register" to create your account.
+                      <br />
                       
+                      {/* Step 2: Login */}
+                      <h5>Step 2: Login with User Data</h5>
+                      Once you have an account, click on the "Login" button and
+                      enter your registered email and password. Click on
+                      "Login" to access your account.
+                      <br />
+                      
+                      {/* Step 3: Deposit Money */}
+                      <h5>Step 3: Deposit Money</h5>
+                      To deposit money into your account, go to the "My
+                      Account" section and click on the "Deposit" button. Enter
+                      the desired amount and click on "Deposit" to add money to
+                      your balance.
+                      <br />
+                      
+                      {/* Step 4: Withdraw Money */}
+                      <h5>Step 4: Withdraw Money</h5>
+                      To withdraw money from your account, go to the "My
+                      Account" section and click on the "Withdraw" button.
+                      Enter the desired amount and click on "Withdraw" to
+                      subtract money from your balance.
+                      <br />
+                      
+                      {/* Step 5: View Transactions */}
+                      <h5>Step 5: View Transactions</h5>
+                      To view your transaction history, go to the "My Account"
+                      section and click on the "Transaction History" button.
+                      You will see a list of all your past transactions.
+                      <br />
+                      
+                      {/* Step 6: Logout */}
+                      <h5>Step 6: Don't Forget to Logout</h5>
+                      To logout, click on the "Logout" button in the "My
+                      Account" section. Make sure to logout after you finish
+                      using the app for security reasons.
+                      <br />
+                      <br />
                     </p>
 
                     {/* Link to the GitHub repository */}

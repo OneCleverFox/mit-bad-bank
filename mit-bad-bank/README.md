@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+**README.md**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# M.I.T. Frontend Application
 
-## Available Scripts
+The M.I.T. Frontend Application is a functional React-based web application that serves as the frontend for the Massachusetts Institute of Technology (M.I.T.). This application allows users to perform various actions, including logging in, registering as a new user, updating their profiles, and managing their transactions.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Login:** Users can log in using their registered email and password. The application validates the credentials and provides appropriate feedback for successful login or invalid credentials.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Registration:** New users can register by providing their name, email, password, and password confirmation. The application verifies the uniqueness of the email before creating a new user account.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Profile View:** After successful login, users can view their profile information, including the user's profile picture (avatar), name, email address, and current account balance.
 
-### `npm test`
+- **Transactions:** Users can perform various types of transactions, such as deposits and withdrawals. The application keeps track of the user's transaction history and displays it on the profile screen.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Profile Update:** Logged-in users can update their profile information, including their name, email address, password, and profile picture (avatar).
 
-### `npm run build`
+## Installation and Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory using the command line.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the required dependencies by running:
 
-### `npm run eject`
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server by running:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   The application should now be running on `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+The application relies on the following dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React: A JavaScript library for building user interfaces.
+- Material-UI: A popular React UI framework for creating responsive and visually appealing components.
+- react-toastify: A library for displaying toast notifications to provide feedback to users.
+- react-router-dom: A library for handling routing and navigation within the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Folder Structure
 
-### Code Splitting
+The project's folder structure is organized as follows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **public:** Contains the public assets, including the index.html file, images, and other static files.
+- **src:** Contains the application's source code.
+  - **components:** Contains reusable components used throughout the application.
+  - **data:** Contains context and data files for managing user information and transactions.
+  - **pages:** Contains the main pages of the application, such as the login, registration, and profile pages.
+  - **App.js:** The main application component that sets up the routing and provides context to the application.
+  - **index.js:** The entry point of the application.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions to the M.I.T. Frontend Application are welcome. If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The M.I.T. Frontend Application is open-source and available under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code according to the terms of the license.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This application was developed by OneCleverFox.
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Special thanks to the Massachusetts Institute of Technology for providing inspiration for this frontend application.
