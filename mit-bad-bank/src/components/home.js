@@ -49,11 +49,11 @@ const Home = () => {
 
       {/* Button container */}
       <div className="card-container">
-        <button onClick={toggleRegisterPopUp} className="btn btn-danger">
+        <button onClick={toggleRegisterPopUp} className="btn btn-secundary">
           Create Account
         </button>
-        <button onClick={toggleAboutPopUp} className="btn btn-primary">
-          How to use this App
+        <button onClick={toggleAboutPopUp} className="btn btn-secundary">
+          About
         </button>
       </div>
       {/* Show the RegisterPopUp component if isRegisterPopUp is true */}

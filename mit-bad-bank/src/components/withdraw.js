@@ -21,7 +21,7 @@ const Withdraw = () => {
   const validationSchema = yup.object({
     withdrawAmount: yup
       .number()
-      .min(1, "Must be greater or equal than $1")
+      .min(1, "Must be greater or equal than 1€")
       .max(loggedInUser.balance, "Insufficient Funds")
       .required("Withdraw Amount is required")
       .typeError("The withdraw amount must be a number"),
@@ -108,7 +108,7 @@ const Withdraw = () => {
             <div className="row">
               <h3>Withdraw</h3>
               <h5 className="card-title">
-                Balance <span>${balance}</span>
+                Balance <span>{balance}€</span>
               </h5>
             </div>
             <div>

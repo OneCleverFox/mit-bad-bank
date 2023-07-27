@@ -26,8 +26,8 @@ const UserAccount = () => {
       {
         label: "Total",
         data: [totalDeposits, totalWithdraws],
-        backgroundColor: ["rgba(75, 192, 192, 0.5)", "rgba(255, 99, 132, 0.5)"],
-        borderColor: ["rgb(75, 192, 192)", "rgb(255, 99, 132)"],
+        backgroundColor: ["rgba(24, 143, 0, 0.5)", "rgba(255, 136, 0, 0.5)"],
+        borderColor: ["rgb(5, 192, 192)", "rgb(255, 99, 132)"],
         borderWith: 2,
       },
     ],
@@ -46,7 +46,7 @@ const UserAccount = () => {
       <div className="userInfo-container">
         <h5>{loggedInUser.name}</h5>
         <h6>Current Balance</h6>
-        <h6>${loggedInUser.balance}</h6>
+        <h6>{loggedInUser.balance}€</h6>
         {/* Button to edit profile information */}
         <Button style={{ position: "static" }} onClick={toggleUpdate}>
           Edit Profile

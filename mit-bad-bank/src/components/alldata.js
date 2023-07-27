@@ -27,7 +27,7 @@ const AllData = () => {
         </TableCell>
         <TableCell align="right">{user.email}</TableCell>
         <TableCell align="right">{user.password}</TableCell>
-        <TableCell align="right">${user.balance}</TableCell>
+        <TableCell align="right">{user.balance}€</TableCell>
       </TableRow>
     );
   });

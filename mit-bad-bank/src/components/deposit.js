@@ -20,7 +20,7 @@ const Deposit = () => {
   const validationSchema = yup.object({
     depositAmount: yup
       .number()
-      .min(1, "Must be greater or equal than $1")
+      .min(1, "Must be greater or equal than 1€")
       .required("Deposit Amount is required")
       .typeError("The deposit amount must be a number"),
   });
@@ -102,7 +102,7 @@ const Deposit = () => {
             <div className="row">
               <h4>Deposit</h4>
               <h5 className="card-title">
-                Balance <span>${balance}</span>
+                Balance <span>{balance}€</span>
               </h5>
             </div>
             <div>
