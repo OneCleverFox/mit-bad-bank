@@ -4,18 +4,18 @@ import { useEffect } from "react";
 
 
 // Define a functional component called AboutPopUp that takes a prop called handleClose
-const AboutPopUp = ({ handleClose }) => {
+const AboutPopUp = ({ handleClose }) => { 
+    
   
-    // Function to handle the escape key press event
+    // Add an event listener when the component mounts
+    useEffect(() => {
+      // Function to handle the escape key press event
     const handleEscapeKeyPress = (event) => {
       if (event.keyCode === 27) {
         // 27 is the keyCode for the escape key
         handleClose();
       }
     };
-  
-    // Add an event listener when the component mounts
-    useEffect(() => {
       document.addEventListener("keydown", handleEscapeKeyPress);
       // Return a cleanup function to remove the event listener when the component unmounts
       return () => {
@@ -23,7 +23,7 @@ const AboutPopUp = ({ handleClose }) => {
       };
     }, 
     
-    []);
+    [handleClose]);
 
 
 
