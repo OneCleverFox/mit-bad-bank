@@ -1,0 +1,17 @@
+  /* CSS for responsive layout of video links */
+  .video-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 600px) {
+    .video-links {
+      flex-direction: column;
+    }
+
+    .video-links h6 {
+      margin-bottom: 8px;
+    }
+  }
+
