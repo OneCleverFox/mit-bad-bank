@@ -1,6 +1,7 @@
 // Import required components from the Material-UI library
 import { Button, Box } from "@mui/material";
 import { useEffect } from "react";
+import "./about.css";
 
 
 // Define a functional component called AboutPopUp that takes a prop called handleClose
@@ -44,20 +45,33 @@ const AboutPopUp = ({ handleClose }) => {
                     {/* Main content of the popup */}
                     <h2>About</h2>
                     <p>
-                      {/* Explanation of the application */}
-                      This application is all about creating a functional frontend for the prestigious M.I.T. (Massachusetts Institute of Technology) and presenting it. <br />
-                      Specifically, certain functions have been provided, which are to be solved in this project for part 2 out of 3.
-                      Below is a brief guide on how to use this app. Have fun! 
-                      <br /> <br />
+                      {/* Explanation of the application */}                      
                       In this application, the main focus is on developing and presenting a functional frontend for the renowned Massachusetts Institute of Technology (M.I.T.). 
                       You will be provided with specific functions that need to be implemented as part of phase 2 out of the total 3 phases of this project.
                       The application aims to provide an intuitive and user-friendly interface, ensuring a pleasant and efficient experience for the users.
                       The frontend is intended to support M.I.T. in its diverse activities and tasks.
                       To use the app, please follow this brief guide:
-                      <br /> <br />                    
+                      <br /> <br /> 
+                      {/* Link to the GitHub repository */}
+                      <div className ="video-links">
+                    <h6>
+                      <a href="https://www.youtube.com/watch?v=DIUVZHazDM4" target = "_blank" rel="noopener noreferrer">
+                        Part 1: Video Instructions on Youtube
+                      </a>
+                    </h6>
+                    <h6>
+                      <a href="https://www.youtube.com/watch?v=DIUVZHazDM4&t=132s" target = "_blank" rel="noopener noreferrer">
+                      Part 2: Challenges and Design Decisions Discussion
+                      </a>
+                    </h6>
+                    <h6>
+                      <a href="https://www.youtube.com/watch?v=DIUVZHazDM4&t=256s" target = "_blank" rel="noopener noreferrer">
+                      Part 3: Discussion on creating form components and additional features
+                      </a>
+                    </h6> 
+                    </div>                 
                     </p>
-                    
-                    
+                                        
                       {/* Step 1: Create Account */}
                       <h5>Step 1: Create Account</h5>
                       To get started, click on the "Register" button and fill
@@ -132,6 +146,8 @@ const AboutPopUp = ({ handleClose }) => {
     </>
   );
 };
+
+
 
 // Export the AboutPopUp component
 export default AboutPopUp;
